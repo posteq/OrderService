@@ -1,0 +1,1 @@
+INSERT INTO items(name, price) VALUES ('skateboard',8.98),('ice-cream',0.21)

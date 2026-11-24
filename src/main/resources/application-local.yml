@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5557/orderdb}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:demo}
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6380}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${AUTH_JWKS_URI:http://localhost:8082/.well-known/jwks.json}
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+app:
+  user-service:
+    url: ${USER_SERVICE_URL:http://localhost:8081}
