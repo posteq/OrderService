@@ -61,6 +61,14 @@ tasks.named('bootJar') {
     archiveFileName = 'app.jar'
 }
 
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+        html.required = true
+    }
+}
+
 jacocoTestCoverageVerification {
     violationRules {
         rule {
