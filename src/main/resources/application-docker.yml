@@ -11,7 +11,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: ${AUTH_JWTKS_URI}
+          jwk-set-uri: ${AUTH_JWKS_URI}
 app:
   user-service:
     url: ${USER_SERVICE_URL}
