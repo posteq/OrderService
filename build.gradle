@@ -85,7 +85,7 @@ jacocoTestCoverageVerification {
 sonar {
     properties {
         property 'sonar.organization', 'posteq'
-        property 'sonar.projectKey', 'posteq'
+        property 'sonar.projectKey', 'posteq_OrderService'
         property 'sonar.host.url', 'https://sonarcloud.io'
         property 'sonar.coverage.jacoco.xmlReportPaths', 'build/reports/jacoco/test/jacocoTestReport.xml'
         property 'sonar.coverage.exclusions', '**/dto/**,**/entity/**,**/*MapperImpl*,**/config/**,**/security/**'
